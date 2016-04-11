@@ -1,0 +1,289 @@
+// Normally mainpage media styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+
+//styles for custom device width
+@include mq($max-width: 900px) {
+	.wrapper{
+		transition: all 0.5s ease;
+	}
+  .container{
+	width: auto;
+	padding: 0 10px;
+  }
+  .bx-default-pager{
+  	left: 10px;
+  	margin-left: 0;
+  }
+  .tiles_item{
+  	width: 245px;
+  }
+  	.tiles_item section p{
+  		font-size: 18px;
+  	}
+  	.tiles_description{
+  		font-size: 22px;
+  	}
+}
+
+@include mq($max-width: 768px) {
+	.container{
+		padding: 0 40px;
+	}
+	.social_icon, .header .menu{
+		display: none;
+	}
+	.logo{
+		float: right;
+		padding: 12px 0px 0 0;
+		img{
+			width: 130px;
+			height: 69px;
+		}
+	}
+	.trigger_menu{
+		display: block;
+		float: left;
+		padding: 18px 0 0 0px;
+	}
+	.bx-default-pager{
+	  	margin-bottom: 40px;
+	  	text-align: center;
+	  	position: static;
+	  }
+	.slider_wrap, .slider_wrap .container{
+		height: auto;
+	}
+		.slider_img{
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+			position: static;
+			padding: 0 0 39px  0;
+		}
+		.slider_txt{
+			padding-top: 0;
+			h6{
+				font-size: 86px;
+			}
+			em{
+				font-size: 98px;
+			}
+			.button{
+				width: 100%;
+				height: 90px;
+				line-height: 90px;
+				text-align: center;
+				padding: 0;
+				font-size: 44px;
+				&:hover{
+					opacity: 0.9;
+				}
+			}
+		}
+			.slider_block.yellow .slider_txt {
+				h6{
+				font-size: 55px;
+				}
+				em{
+				font-size: 68px;
+				}
+			}
+				.bx-default-pager{
+					margin-top: -10px;
+					a{
+						width: 30px;
+						height: 30px;
+						margin: 0 10px;
+					}
+				}
+	.brands_images{
+		display: block;
+		font-size: 0;
+		width: 100%;
+	}
+		.brands_block{
+			display: block;
+			width: 100%;
+		}
+			.brands_item{
+				text-align: center;
+				display: inline-block;
+				width: 50%;
+				vertical-align: bottom;
+				img{
+					width: 90%;
+				}
+			}
+	.title{
+		font-size: 57px;
+		padding: 33px 0;
+		border-top: 4px solid #146a83;
+		&:before{
+			display: none;
+		}
+		em{
+			font-size: 41px;
+		}
+	}
+	.tiles_item, .tiles_item figure{
+		width: 100%;
+		float: none;
+		display: block;
+		height: auto;
+		margin: 0;
+		& > img{
+			display: none;
+		}
+		section{
+			display: none;
+		}
+		figcaption, .tiles_item_social{
+			height: 182px;
+			padding: 21px 44px;
+			padding-left: 203px;
+			font-size: 60px;
+			text-align: left;
+			box-sizing: border-box;
+			margin-bottom: 0;
+			em{
+				font-size: 60px;
+			}
+			img{
+				width: 124px;
+				left: 44px;
+				position: absolute;
+				top: 25px;
+			}
+		}
+	}
+		.tiles_item.violet section{
+			display: block;
+			position: static;
+			opacity: 1;
+			p{
+				display: none;
+			}
+			.tiles_item_social{
+				padding-top: 38px;
+			}
+		}
+	.tiles_wrap.container{
+		padding: 0;
+	}
+	.bottom_button{
+		margin-top: 22px;
+		.button{
+			width: auto;
+			display: block;
+			font-size: 24px;
+			padding: 0;
+			line-height: 55px;
+			height: 55px;
+			margin: 0 65px;
+		}
+	}
+	.hide_mobile{
+		display: none;
+	}
+	.hide_desctop{
+		display: block;
+	}
+	.footer{
+		.menu{
+			padding-bottom: 35px;
+			float: none;
+			text-align: center;
+			font-size: 26.5px;
+		}
+		.logo{
+			float: left;
+			padding-left: 100px;
+			img{
+				width: 202px;
+				height: auto;
+			}
+		}
+		address{
+			font-size: 30px;
+			width: 319px;
+			line-height: 1.3;
+			padding-right: 0;
+		}
+	}
+	.openmenu{
+		transition: all 0.5s ease;
+		.header{
+			.menu{
+				left: 0;
+				opacity: 1;
+			}
+		}
+	}
+	.header{
+		.menu{
+			position: fixed;
+			display: block;
+			left: -580px;
+			top: 0;
+			opacity: 0;
+			z-index: 99;
+			height: 100%;
+			transition: all 0.5s ease;
+			background:#ff9600;
+			width: 580px;
+			padding: 0;
+			overflow-y: auto;
+			box-shadow: inset -5px -5px 20px #cf5b00;
+			.container{
+				padding: 0;
+			}
+			ul{
+
+				li{
+					height: auto;
+					display: block;
+					padding: 0;
+					a{
+						height: auto;
+						line-height: 1;
+						padding: 15px 44px;
+						font-size: 44px;
+						font-weight: bold;
+						&:before{
+							content: none;
+						}
+					}
+					.dropdown{
+						position: static;
+						display: none;
+						background:#e87404;
+						height: auto;
+						li{
+							height: auto;
+							text-align: left;
+							a{
+								height: auto;
+								line-height: 1;
+								padding: 15px 44px;
+								font-size: 44px;
+								font-weight: normal;
+								color: #fff;
+								&:before{
+									content: none;
+								}
+							}
+						}
+					}
+					.dropdown_bigmenu{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.openmenu{
+		left: 580px;
+		transition: all 0.5s ease;
+	}
+}
