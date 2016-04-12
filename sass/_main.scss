@@ -172,6 +172,14 @@
 				font-style: italic;
 				font-size: 53px;
 			}
+			p{
+				line-height: 22px;
+				font-size: 16px;
+				color: #54575a;
+				width: 327px;
+				display: block;
+				padding: 35px 0 0 0;
+			}
 			.button{
 				margin-top: 29px;
 				background:#ff9016;
@@ -471,6 +479,9 @@
 			display: block;
 		}
 	}
+	.logo{
+		padding: 0;
+	}
  }
  	.hide_desctop{
  		display: none;
@@ -480,3 +491,186 @@
  	}
 
 /*----------end footer----------*/
+
+
+/*----------behind-scenes----------*/
+.top_wrap{
+	.container{
+		height: 460px;
+	}	
+}
+.content_txt{
+	line-height: 22px;
+	color: #54575a;
+	font-size: 16px;
+	padding: 22px 0 0 0;
+	p{
+		padding-bottom: 20px;
+	}
+}
+/*----------end-behind-scenes----------*/
+
+/*----------latest-inovations----------*/
+.latest_inovations_bnr{
+	@include linear-gradient( #96e07e, #fff);
+	.slider_txt{
+		h6{
+			color: #228e16;
+		}
+	}
+	.container{
+		height: 490px;
+	}	
+}
+	.link{
+		font-size: 16px;
+		color: #ff9016;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+.news_wrap{
+	padding-top: 20px;
+}
+	.news_block{
+		@include povh('');
+		padding: 20px 0;
+		& > img{
+			border-radius: 50%;
+			float: left;
+			margin: 0 20px 0 0;
+		}
+		article{
+			@include povh('');
+			section{
+				display: table-cell;
+				height: 207px;
+				vertical-align: middle;
+			}
+			h6{
+				font-size: 20px;
+				color: #0076a9;
+				text-transform: uppercase;
+				padding-bottom: 5px;
+				font-weight: bold;
+				a{
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			p{
+				padding-bottom: 15px;
+			}
+		}
+	}
+/*----------end-latest-inovations----------*/
+
+/*----------guide----------*/
+.guide_bnr{
+	background:#F4A988;
+	background: -moz-linear-gradient(top,  rgba(244,169,136,0.63) 0%, rgba(255,255,255,0.86) 63%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(244,169,136,0.63) 0%,rgba(255,255,255,0.86) 63%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(244,169,136,0.63) 0%,rgba(255,255,255,0.86) 63%,rgba(255,255,255,1) 100%);
+	.slider_txt{
+		h6{
+			color: #d21460;
+		}
+	}
+	.container{
+		height: auto;
+		min-height: 530px;
+	}
+}
+.guide_wrap{
+	text-align: center;
+	padding: 45px 0 0 0;
+}
+	.guide_block{
+		figure{
+			vertical-align: top;
+			margin: 0 5px;
+			padding-bottom: 25px;
+			display: inline-block;
+			width: 220px; 
+			img{
+				border-radius: 50%;
+			}
+			figcaption{
+				padding: 12px 0 0 0;
+				color: #146a83;
+				font-size: 16px;
+				color: #146a83;
+				font-style: italic;
+				font-family: $fontfamily;
+				a{
+					font-size: 20px;
+					font-weight: bold;
+					font-family: $ffamily;
+					text-decoration: none;
+					display: block;
+					font-style: normal;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+/*----------end-guide----------*/
+
+/*----------faq----------*/
+.faq{
+	background: #fff191;
+	background: -moz-linear-gradient(top,  #fff191 0%, #ffffff 21%, #ffffff 100%);
+	background: -webkit-linear-gradient(top,  #fff191 0%,#ffffff 21%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #fff191 0%,#ffffff 21%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff191', endColorstr='#ffffff',GradientType=0 );
+	padding: 75px 0;
+	h1{
+		font-size: 45px;
+		color: #177fe9;
+		text-transform: uppercase;
+		padding-bottom: 28px;
+		font-weight: bold;
+	}
+	section{
+		counter-reset: list;
+	}
+	dl{
+		padding-left: 18px;
+		position: relative;
+		color: #54575a;
+		font-size: 16px;
+		line-height: 20px;
+		&:before{
+			counter-increment: list;
+   			 content: counter(list);
+   			 position: absolute;
+   			 left: 0;
+   			 top: 1px;
+   			 color: #ff9016;
+   			 font-size: 16px;
+   			 font-family: $ffamily;
+   			 font-weight: bold;
+		}
+	}
+	dt{
+		font-weight: bold;
+		padding-bottom:20px ;
+	}
+	dd{
+		padding-bottom: 20px;
+	}
+}
+/*----------end-faq----------*/
+
+/*----------career_bnr----------*/
+.career_bnr{
+	@include linear-gradient( #85e4ff, #fff);
+}
+/*----------end-career_bnr----------*/
+
