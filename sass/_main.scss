@@ -467,6 +467,9 @@
 	margin: 45px 0 0 0;
 	background:#ff9600;
 	padding: 20px 0;
+	&.no-margin{
+		margin-top: 0;
+	}
 	address{
 		padding: 0 50px 0 25px ;
 		float: left;
@@ -823,5 +826,266 @@
 		right: 0;
 		border-radius: 50%; 
 	}
+.contact_form_wrap{
+	@include povh('povh');
+	width: 780px;
+}
+	.contact_form{
+		small{
+			font-size: 12px;
+			color: #54575a;
+			text-transform: uppercase;
+			display: block;
+			padding-bottom: 20px;
+		}
+	}
+		.contact_form_row{
+			@include povh('povh');
+			padding-bottom: 37px;
+			.button{
+				width: 231px;
+				height: 56px;
+				color: #fff;
+				font-size: 18px;
+				text-transform: uppercase;
+				padding: 0;
+				line-height: 56px;
+			}
+			.text_center{
+				em{
+					display: block;
+					padding: 18px 0 0 0 ;
+					font-size: 14px;
+					color: #676767;
+					font-family: $fontfamily;
+				}
+			}
+		}
+			.contact_form_col{
+				width: 50%;
+				float: left;
+			}
+				.contact_form_item{
+					padding-bottom: 17px;
+					label{
+						display: block;
+						padding-bottom: 7px;
+						font-size: 16px;
+						font-weight: bold;
+						text-transform: uppercase;
+						color: #54575a;
+					}
+					input.inp_small{
+						width: 93px;
+						text-align: center;
+						margin: 0 14px 0 0 ;
+					}
+				}
+				.contact_form_radio{
+					padding: 10px 0 0 0;
+					label{
+						font-size: 16px;
+						text-transform: none;
+						font-family: $fontfamily;
+						font-weight: normal;
+						display: inline-block;
+						padding: 0 20px 0 0;
+						&:last-child{
+							padding: 0;
+						}
+					}
+				}
+				.contact_form_title{
+					color: #1371a2;
+					font-size: 19px;
+					text-align: center;
+					font-weight: bold;
+					em{
+						font-style: italic;
+						font-family: $fontfamily;
+						color: #606060;
+						font-size: 15px;
+						display: block;
+						font-weight: normal;
+						padding-top: 5px;
+					}
+				}
+				.select_styled{
+					select{
+						@include input(input);
+						-webkit-appearance: none;
+					    -moz-appearance: none;
+					    appearance: none;
+						background:#e9e9e9 url(../img/select_arrow.png) no-repeat top right;
+					}
+				}
 /*----------end-contacts----------*/
 
+/*----------brands_landing----------*/
+.brands_landing_wrap{
+	background: -moz-linear-gradient(top,  rgba(215,146,209,1) 0%, rgba(255,255,255,0.75) 12%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top,  rgba(215,146,209,1) 0%,rgba(255,255,255,0.75) 12%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom,  rgba(215,146,209,1) 0%,rgba(255,255,255,0.75) 12%,rgba(255,255,255,0) 100%);
+	padding: 66px 0 0 0;
+	article{
+		font-size: 16px;
+		color: #54575a;
+		line-height: 22px;
+		text-align: center;
+		padding-bottom: 28px;
+	}
+	nav{
+		padding-bottom: 45px;
+		text-align: center;
+		a{
+			padding: 0 7px;
+			display: inline-block;
+			font-size: 18px;
+			color: #ff9600;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: bold;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+	.brands_title{
+		text-align: center;
+		font-size: 46px;
+		color: #b934ae;
+		font-weight: bold;
+		padding-bottom: 30px;
+		em{
+			font-weight: normal;
+			font-family: $fontfamily;
+			font-style: italic;
+		}
+	}
+		.brands_landing_block{
+			text-align: center;
+			padding: 0 0 30px 0;
+		}
+			.brands_landing_item{
+				width: 255px;
+				padding: 0 22px;
+				display: inline-block;
+				vertical-align: top;
+				img{
+					margin: 0 auto;
+				}
+				dl{
+					padding: 3px 0 0 0;
+					dt{
+						font-size: 15px;
+						text-transform: uppercase;
+						font-weight: bold;
+						color: #54575a;
+					}
+					dd{
+						font-size: 13px;
+						color: #54575a;
+						line-height: 17px;
+						padding: 5px 0 0 0;
+					}
+				}
+			}
+.brands_landing_slider{
+	.slick-arrow{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 50;
+		width: 100px;
+		height: 100%;
+		@include hide-text;
+		background: -moz-linear-gradient(left,  rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 20%,rgba(255,255,255,0) 100%);
+		background: linear-gradient(to right,  rgba(255,255,255,1) 20%,rgba(255,255,255,0) 100%);
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			@include arr(20,30, #ff9016, l);
+			
+		}
+		&.slick-next{
+			left: auto;
+			right: 0;
+			background: -moz-linear-gradient(left,  rgba(255,255,255,0) 20%, rgba(255,255,255,1) 100%);
+			background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 20%,rgba(255,255,255,1) 100%);
+			background: linear-gradient(to right,  rgba(255,255,255,0) 20%,rgba(255,255,255,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+			&:before{
+				left: auto;
+				right: 0;
+				@include arr(20,30, #ff9016, r);
+			}
+		}
+
+	}
+}
+/*----------end-brands_landing----------*/
+
+/*------------brand-----------------*/
+.brand_wrap{
+	height: 629px;
+	@include povh('povh');
+	background:url(../img/brand_bg.jpg) no-repeat top center;
+	.brand_block{
+		background:rgba(255,255,255, 0.8);
+		margin: 64px 0 0 0;
+		padding: 0 0 20px 0;
+		.brand_image{
+			float: right;
+			width: 475px;
+			padding: 37px 0 0 0;
+		}
+		article{
+			@include povh('povh');
+			font-size: 16px;
+			color: #54575a;
+			width: 350px;
+			padding: 30px 0 0 0;
+			p{
+				padding: 20px 0;
+			}
+			h1{
+				font-weight: bold;
+				font-size: 45px;
+				color: #fa1f17;
+				text-transform: uppercase;
+
+			}
+			nav{
+				a{
+					display: block;
+					padding: 10px 0;
+					border-top: 2px solid #fced64;
+					text-decoration: none;
+					font-size: 16px;
+					color: #fa1f17;
+					text-transform: uppercase;
+					font-weight: bold;
+					position: relative;
+					&.back{
+						padding-left: 12px;
+						&:before{
+							content: '';
+							position: absolute;
+							left: 0;
+							top: 17px;
+							@include arr(8,8, #fa1f17, l);
+						}
+					}
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+/*-----------end-brand--------------*/
