@@ -22,16 +22,19 @@
 	top: 0;
 	left: 0;
 	z-index: 8020;
+
 }
 
 .fancybox-skin {
 	position: relative;
-	background: #f9f9f9;
 	color: #444;
 	text-shadow: none;
-	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	        border-radius: 4px;
+
+background: -moz-linear-gradient(45deg,  rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.93) 11%, rgba(255,255,255,0.96) 49%, rgba(255,255,255,0.98) 74%, rgba(255,239,133,1) 100%);
+background: -webkit-linear-gradient(45deg,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0.93) 11%,rgba(255,255,255,0.96) 49%,rgba(255,255,255,0.98) 74%,rgba(255,239,133,1) 100%);
+background: linear-gradient(45deg,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0.93) 11%,rgba(255,255,255,0.96) 49%,rgba(255,255,255,0.98) 74%,rgba(255,239,133,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#ffef85',GradientType=1 );
+
 }
 
 .fancybox-opened {
@@ -39,9 +42,7 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -49,7 +50,7 @@
 }
 
 .fancybox-inner {
-	overflow: hidden;
+	overflow: visible !important;
 }
 
 .fancybox-type-iframe .fancybox-inner {
@@ -100,6 +101,7 @@
 .fancybox-close {
 	position: absolute;
 	top: -18px;
+	visibility: hidden;
 	right: -18px;
 	width: 36px;
 	height: 36px;

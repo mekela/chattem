@@ -1088,4 +1088,61 @@
 		}
 	}
 }
+
+.brand_modal{
+	.brand_modal_inner{
+		padding: 25px;
+		h6{
+			font-size: 20px;
+			color: #fa1f17;
+			font-weight: bold;
+			padding-bottom: 11px;
+			border-bottom: 2px solid #fced64;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+		}
+		nav{
+			overflow: hidden;
+			padding-bottom: 20px;
+			ul{
+				width: 33%;
+				float: left;
+				@include povh('povh');
+				font-size: 14px;
+				color: #54575a;
+				font-weight: bold;
+				line-height: 24px;
+				text-decoration: none;
+				a{
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		nav + h6{
+			margin-bottom: 5px;
+		}
+	}
+}
+	.brand_modal_img{
+		position: absolute;
+		top: -25px;
+		right: 0px;
+	}
+	.close_modal{
+		text-align: center;
+		padding: 19px 0 0 0;
+		.button{
+			color: #ffef85;
+			font-size: 19px;
+			background:#fa1f17;
+			width: 137px;
+			box-shadow: 3px 3px 0px #dadada;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
 /*-----------end-brand--------------*/

@@ -25,8 +25,13 @@ $(document).ready(function() {
 	  centerMode: true,
 	  centerPadding: '60px',
 	  slidesToShow: 3,
-	  
 	});
+
+	//close
+	$('.close_modal a').on('click', function(){
+	  //console.log($(this).parent);
+	  $.fancybox.close();
+	 });
 
 	//scroll link
 	$('.brands_landing_wrap nav a').on('click',function(){
