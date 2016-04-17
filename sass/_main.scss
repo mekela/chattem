@@ -193,7 +193,7 @@
 				&.violet{
 					@include linear-gradient( #d895d2, #fff);
 					.slider_txt{
-						h6{
+						h6, h1{
 							color: #b934ae;
 						}
 					}
@@ -201,7 +201,7 @@
 				&.rose{
 					@include linear-gradient( #ffaf9a, #fff);
 					.slider_txt{
-						h6{
+						h6, h1{
 							color: #ff4412;
 						}
 					}
@@ -209,7 +209,7 @@
 				&.yellow{
 					@include linear-gradient( #fffb92, #fff);
 					.slider_txt{
-						h6{
+						h6, h1{
 							color: #e34545;
 						}
 					}
@@ -517,7 +517,7 @@
 .latest_inovations_bnr{
 	@include linear-gradient( #96e07e, #fff);
 	.slider_txt{
-		h6{
+		h6, h1{
 			color: #228e16;
 		}
 	}
@@ -552,7 +552,7 @@
 				height: 207px;
 				vertical-align: middle;
 			}
-			h6{
+			h6, h1{
 				font-size: 20px;
 				color: #0076a9;
 				text-transform: uppercase;
@@ -579,7 +579,7 @@
 	background: -webkit-linear-gradient(top,  rgba(244,169,136,0.63) 0%,rgba(255,255,255,0.86) 63%,rgba(255,255,255,1) 100%);
 	background: linear-gradient(to bottom,  rgba(244,169,136,0.63) 0%,rgba(255,255,255,0.86) 63%,rgba(255,255,255,1) 100%);
 	.slider_txt{
-		h6{
+		h6, h1{
 			color: #d21460;
 		}
 	}
@@ -1092,7 +1092,7 @@
 .brand_modal{
 	.brand_modal_inner{
 		padding: 25px;
-		h6{
+		h6, h1{
 			font-size: 20px;
 			color: #fa1f17;
 			font-weight: bold;
@@ -1164,7 +1164,7 @@
 			@include povh('povh');
 			padding: 11px 45px 0 0;
 
-			h6{
+			h6, h1{
 				color: #ff9016;
 				font-size: 30px;
 				text-transform: uppercase;

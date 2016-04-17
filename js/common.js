@@ -25,6 +25,15 @@ $(document).ready(function() {
 	  centerMode: true,
 	  centerPadding: '60px',
 	  slidesToShow: 3,
+
+	  responsive: [{ 
+        breakpoint: 800,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        } 
+    }]
+
 	});
 
 	$(".history_slider").slick({

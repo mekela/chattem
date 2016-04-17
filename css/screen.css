@@ -214,15 +214,15 @@ textarea { height: 90px; padding-top: 5px; }
 
 .slider_block.violet { background: #fff; background: -webkit-linear-gradient(legacy-direction(#d895d2), #fff); background: -webkit-linear-gradient(#d895d2, #fff); background: linear-gradient(#d895d2, #fff); }
 
-.slider_block.violet .slider_txt h6 { color: #b934ae; }
+.slider_block.violet .slider_txt h6, .slider_block.violet .slider_txt h1 { color: #b934ae; }
 
 .slider_block.rose { background: #fff; background: -webkit-linear-gradient(legacy-direction(#ffaf9a), #fff); background: -webkit-linear-gradient(#ffaf9a, #fff); background: linear-gradient(#ffaf9a, #fff); }
 
-.slider_block.rose .slider_txt h6 { color: #ff4412; }
+.slider_block.rose .slider_txt h6, .slider_block.rose .slider_txt h1 { color: #ff4412; }
 
 .slider_block.yellow { background: #fff; background: -webkit-linear-gradient(legacy-direction(#fffb92), #fff); background: -webkit-linear-gradient(#fffb92, #fff); background: linear-gradient(#fffb92, #fff); }
 
-.slider_block.yellow .slider_txt h6 { color: #e34545; }
+.slider_block.yellow .slider_txt h6, .slider_block.yellow .slider_txt h1 { color: #e34545; }
 
 .bx-default-pager { position: absolute; bottom: 0; left: 50%; z-index: 10; width: 900px; margin-left: -450px; width: 100%; }
 
@@ -331,7 +331,7 @@ textarea { height: 90px; padding-top: 5px; }
 /*----------latest-inovations----------*/
 .latest_inovations_bnr { background: #fff; background: -webkit-linear-gradient(legacy-direction(#96e07e), #fff); background: -webkit-linear-gradient(#96e07e, #fff); background: linear-gradient(#96e07e, #fff); }
 
-.latest_inovations_bnr .slider_txt h6 { color: #228e16; }
+.latest_inovations_bnr .slider_txt h6, .latest_inovations_bnr .slider_txt h1 { color: #228e16; }
 
 .latest_inovations_bnr .container { height: 490px; }
 
@@ -349,11 +349,11 @@ textarea { height: 90px; padding-top: 5px; }
 
 .news_block article section { display: table-cell; height: 207px; vertical-align: middle; }
 
-.news_block article h6 { font-size: 20px; color: #0076a9; text-transform: uppercase; padding-bottom: 5px; font-weight: bold; }
+.news_block article h6, .news_block article h1 { font-size: 20px; color: #0076a9; text-transform: uppercase; padding-bottom: 5px; font-weight: bold; }
 
-.news_block article h6 a { text-decoration: none; }
+.news_block article h6 a, .news_block article h1 a { text-decoration: none; }
 
-.news_block article h6 a:hover { text-decoration: underline; }
+.news_block article h6 a:hover, .news_block article h1 a:hover { text-decoration: underline; }
 
 .news_block article p { padding-bottom: 15px; }
 
@@ -361,7 +361,7 @@ textarea { height: 90px; padding-top: 5px; }
 /*----------guide----------*/
 .guide_bnr { background: #F4A988; background: -webkit-linear-gradient(top, rgba(244, 169, 136, 0.63) 0%, rgba(255, 255, 255, 0.86) 63%, white 100%); background: linear-gradient(to bottom, rgba(244, 169, 136, 0.63) 0%, rgba(255, 255, 255, 0.86) 63%, white 100%); }
 
-.guide_bnr .slider_txt h6 { color: #d21460; }
+.guide_bnr .slider_txt h6, .guide_bnr .slider_txt h1 { color: #d21460; }
 
 .guide_bnr .container { height: auto; min-height: 530px; }
 
@@ -541,7 +541,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .brand_modal .brand_modal_inner { padding: 25px; }
 
-.brand_modal .brand_modal_inner h6 { font-size: 20px; color: #fa1f17; font-weight: bold; padding-bottom: 11px; border-bottom: 2px solid #fced64; text-transform: uppercase; margin-bottom: 25px; }
+.brand_modal .brand_modal_inner h6, .brand_modal .brand_modal_inner h1 { font-size: 20px; color: #fa1f17; font-weight: bold; padding-bottom: 11px; border-bottom: 2px solid #fced64; text-transform: uppercase; margin-bottom: 25px; }
 
 .brand_modal .brand_modal_inner nav { overflow: hidden; padding-bottom: 20px; }
 
@@ -571,11 +571,11 @@ textarea { height: 90px; padding-top: 5px; }
 
 .history_slider_block article { position: relative; overflow: hidden; padding: 11px 45px 0 0; }
 
-.history_slider_block article h6 { color: #ff9016; font-size: 30px; text-transform: uppercase; text-align: center; position: relative; font-family: "Merriweather"; }
+.history_slider_block article h6, .history_slider_block article h1 { color: #ff9016; font-size: 30px; text-transform: uppercase; text-align: center; position: relative; font-family: "Merriweather"; }
 
-.history_slider_block article h6:before { content: ''; width: 100%; position: absolute; left: 0; top: 50%; height: 1px; background: #ff9016; }
+.history_slider_block article h6:before, .history_slider_block article h1:before { content: ''; width: 100%; position: absolute; left: 0; top: 50%; height: 1px; background: #ff9016; }
 
-.history_slider_block article h6 span { position: relative; z-index: 2; background: #fff; padding: 0 13px; }
+.history_slider_block article h6 span, .history_slider_block article h1 span { position: relative; z-index: 2; background: #fff; padding: 0 13px; }
 
 .history_slider_block article p { padding: 10px 0; padding-bottom: 22px; text-align: center; color: #75797b; font-size: 18px; line-height: 1.4; }
 
@@ -669,4 +669,42 @@ textarea { height: 90px; padding-top: 5px; }
   .header .menu ul li .dropdown li a { height: auto; line-height: 1; padding: 15px 44px; font-size: 44px; font-weight: normal; color: #fff; }
   .header .menu ul li .dropdown li a:before { content: none; }
   .header .menu ul li .dropdown_bigmenu { display: none; }
-  .openmenu { left: 580px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; } }
+  .openmenu { left: 580px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+  .brands_landing_wrap nav a { font-size: 30px; }
+  .brands_landing_wrap .title, .guide_wrap .title, .search_wrap .title { border-top: none; font-size: 34px; }
+  .brands_landing_wrap .title:before, .guide_wrap .title:before, .search_wrap .title:before { display: block; }
+  .brands_landing_wrap .title em, .guide_wrap .title em, .search_wrap .title em { font-size: 34px; }
+  .news_block > img { float: none; margin: 0 auto; display: block; max-width: 100%; min-width: 370px; margin-bottom: 25px; }
+  .link, .news_block article section p, .news_block article section h6 { font-size: 34px; line-height: 1.3; }
+  .latest_inovations_bnr, .top_wrap { padding-bottom: 30px; }
+  .latest_inovations_bnr .container, .top_wrap .container { height: auto; }
+  .latest_inovations_bnr .slider_txt p, .top_wrap .slider_txt p { width: 100%; font-size: 34px; line-height: 1.3; }
+  .latest_inovations_bnr .slider_txt em, .top_wrap .slider_txt em { font-size: 60px; }
+  .latest_inovations_bnr .slider_txt em br, .top_wrap .slider_txt em br { display: none; }
+  .brands_wrap .title { font-size: 43px; }
+  .brands_item { padding-bottom: 35px; }
+  .content_txt { font-size: 34px; line-height: 1.3; }
+  .content_txt p { font-size: 34px; line-height: 1.3; }
+  .guide_bnr .slider_txt h1 br { display: none; }
+  .guide_block figure { display: block; text-align: center; width: 100%; }
+  .guide_block figure img { min-width: 310px; }
+  .guide_block figure figcaption { font-size: 34px; }
+  .guide_block figure figcaption a { font-size: 24px; }
+  .search_form_top div { display: block; width: 100%; padding: 0; margin: 0; padding-bottom: 20px; }
+  .search_form_top div label { font-size: 23px; }
+  .search_form_top div input { height: 60px; width: 100%; font-size: 34px; }
+  .search_form_bottom, .search_table { width: 100%; }
+  .search_form_bottom .button, .search_table .button { width: 131px; }
+  .paginator { font-size: 20px; }
+  .faq dl { font-size: 20px; line-height: 1.3; }
+  .contact_form_col { float: none; width: 100%; }
+  .contact_form_item label { font-size: 21px; }
+  .contact_form_item input, .contact_form_item select, .contact_form_item textarea { width: 100%; height: 55px; font-size: 20px; }
+  .contact_form_item textarea { height: 130px; }
+  .contact_form_title, .contact_form_title em { font-size: 25px; }
+  .contact_form_row .button { width: 465px; height: 112px; font-size: 50px; }
+  .map { margin: 0 auto; display: block; position: relative; overflow: hidden; top: 0; margin-top: -40px; right: 0; height: 478px; width: 478px; float: right; }
+  .contact_form_row .text_center em { font-size: 20px; }
+  .brand_wrap .brand_block article { width: 100%; text-align: center; }
+  .brand_wrap { height: auto; padding-bottom: 50px; background-size: cover; }
+  .brand_wrap .brand_block article nav a.back:before { display: none; } }
