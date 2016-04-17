@@ -499,7 +499,7 @@
 /*----------behind-scenes----------*/
 .top_wrap{
 	.container{
-		height: 460px;
+		min-height: 460px;
 	}	
 }
 .content_txt{
@@ -972,23 +972,27 @@
 				padding: 0 22px;
 				display: inline-block;
 				vertical-align: top;
+				a{
+					display: block;
+					text-decoration: none;
+				}
 				img{
 					margin: 0 auto;
 				}
-				dl{
+				p{
 					padding: 3px 0 0 0;
-					dt{
+					font-size: 13px;
+					color: #54575a;
+					line-height: 17px;
+					strong{
+						display: block;
 						font-size: 15px;
 						text-transform: uppercase;
 						font-weight: bold;
 						color: #54575a;
+						padding-bottom: 5px;
 					}
-					dd{
-						font-size: 13px;
-						color: #54575a;
-						line-height: 17px;
-						padding: 5px 0 0 0;
-					}
+					
 				}
 			}
 .brands_landing_slider{

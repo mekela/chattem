@@ -48,13 +48,11 @@ $(document).ready(function() {
 	    },
 
 	    responsive: [{ 
-	        breakpoint: 500,
+	        breakpoint: 800,
 	        settings: {
-	            dots: false,
-	            arrows: false,
-	            infinite: false,
-	            slidesToShow: 2,
-	            slidesToScroll: 2
+	        	centerPadding: '0px',
+	            slidesToShow: 1,
+	            slidesToScroll: 1
 	        } 
 	    }]
 	});

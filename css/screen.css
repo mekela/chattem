@@ -321,7 +321,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 /*----------end footer----------*/
 /*----------behind-scenes----------*/
-.top_wrap .container { height: 460px; }
+.top_wrap .container { min-height: 460px; }
 
 .content_txt { line-height: 22px; color: #54575a; font-size: 16px; padding: 22px 0 0 0; }
 
@@ -501,13 +501,13 @@ textarea { height: 90px; padding-top: 5px; }
 
 .brands_landing_item { width: 255px; padding: 0 22px; display: inline-block; vertical-align: top; }
 
+.brands_landing_item a { display: block; text-decoration: none; }
+
 .brands_landing_item img { margin: 0 auto; }
 
-.brands_landing_item dl { padding: 3px 0 0 0; }
+.brands_landing_item p { padding: 3px 0 0 0; font-size: 13px; color: #54575a; line-height: 17px; }
 
-.brands_landing_item dl dt { font-size: 15px; text-transform: uppercase; font-weight: bold; color: #54575a; }
-
-.brands_landing_item dl dd { font-size: 13px; color: #54575a; line-height: 17px; padding: 5px 0 0 0; }
+.brands_landing_item p strong { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; color: #54575a; padding-bottom: 5px; }
 
 .brands_landing_slider .slick-arrow { position: absolute; top: 0; left: 0; z-index: 50; width: 100px; height: 100%; font: 0 / 0 a; text-shadow: none; color: transparent; background: -webkit-linear-gradient(left, white 20%, rgba(255, 255, 255, 0) 100%); background: linear-gradient(to right, white 20%, rgba(255, 255, 255, 0) 100%); }
 
@@ -707,4 +707,5 @@ textarea { height: 90px; padding-top: 5px; }
   .contact_form_row .text_center em { font-size: 20px; }
   .brand_wrap .brand_block article { width: 100%; text-align: center; }
   .brand_wrap { height: auto; padding-bottom: 50px; background-size: cover; }
-  .brand_wrap .brand_block article nav a.back:before { display: none; } }
+  .brand_wrap .brand_block article nav a.back:before { display: none; }
+  .history_slider .slick-arrow { background: none; } }
