@@ -587,15 +587,25 @@ textarea { height: 90px; padding-top: 5px; }
 
 .history_slider_block article blockquote em { font-style: italic; font-family: "Merriweather"; }
 
-.history_slider { position: relative; overflow: hidden; }
+.history_slider { position: relative; overflow: hidden; padding: 131px 0 0 0; }
 
 .history_slider .slick-arrow { position: absolute; top: 0; left: 0; z-index: 50; width: 100px; height: 100%; font: 0 / 0 a; text-shadow: none; color: transparent; background: -webkit-linear-gradient(left, white 20%, rgba(255, 255, 255, 0) 100%); background: linear-gradient(to right, white 20%, rgba(255, 255, 255, 0) 100%); }
 
-.history_slider .slick-arrow:before { content: ''; position: absolute; left: 0; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 15px 20px 15px 0; border-color: transparent #ff9016 transparent transparent; }
+.history_slider .slick-arrow:before { content: ''; position: absolute; left: 0; top: 81px; width: 92px; height: 14px; background: url(../img/icons/slider_history_arrow.png) no-repeat top center; }
 
 .history_slider .slick-arrow.slick-next { left: auto; right: 0; background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 20%, white 100%); background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, white 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
 
-.history_slider .slick-arrow.slick-next:before { left: auto; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 15px 0 15px 20px; border-color: transparent transparent transparent #ff9016; }
+.history_slider .slick-arrow.slick-next:before { position: absolute; left: auto; right: 0; top: 81px; width: 92px; height: 14px; background: url(../img/icons/slider_history_arrow.png) no-repeat top center; -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); -webkit-filter: FlipH; filter: FlipH; -ms-filter: "FlipH"; }
+
+.history_slider .slick-dots { position: absolute; top: 0; left: 0; text-align: center; z-index: 5; width: 100%; padding-bottom: 45px; border-bottom: 2px solid #53585a; }
+
+.history_slider .slick-dots li { display: inline-block; padding: 0 14px; }
+
+.history_slider .slick-dots li.slick-active { position: relative; }
+
+.history_slider .slick-dots li.slick-active:before { content: url(../img/icons/history_active.png); position: absolute; left: 40%; bottom: -52px; }
+
+.history_slider .slick-dots li a { color: #ff9016; font-weight: normal; font-size: 30px; text-decoration: none; font-family: "Merriweather"; }
 
 /*----------end-history-------------*/
 @media only screen and (max-width: 900px) { .wrapper { -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
