@@ -200,7 +200,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .slider_txt { padding: 80px 0 0 0; position: relative; z-index: 2; }
 
-.slider_txt h6 { font-size: 46px; color: #1788a9; font-weight: bold; text-transform: uppercase; line-height: 1.1; }
+.slider_txt h6, .slider_txt h1 { font-size: 46px; color: #1788a9; font-weight: bold; text-transform: uppercase; line-height: 1.1; }
 
 .slider_txt em { text-transform: none; font-weight: normal; font-family: "Merriweather"; font-style: italic; font-size: 53px; }
 
@@ -562,6 +562,42 @@ textarea { height: 90px; padding-top: 5px; }
 .close_modal .button:hover { opacity: 0.8; }
 
 /*-----------end-brand--------------*/
+/*-----------history-------------*/
+.history_wrap { padding: 25px 0; }
+
+.history_slider_block { position: relative; overflow: hidden; width: 630px; margin: 0 auto; }
+
+.history_slider_block .history_slider_img { float: left; border-radius: 50%; margin: 0 25px 0 0; }
+
+.history_slider_block article { position: relative; overflow: hidden; padding: 11px 45px 0 0; }
+
+.history_slider_block article h6 { color: #ff9016; font-size: 30px; text-transform: uppercase; text-align: center; position: relative; font-family: "Merriweather"; }
+
+.history_slider_block article h6:before { content: ''; width: 100%; position: absolute; left: 0; top: 50%; height: 1px; background: #ff9016; }
+
+.history_slider_block article h6 span { position: relative; z-index: 2; background: #fff; padding: 0 13px; }
+
+.history_slider_block article p { padding: 10px 0; padding-bottom: 22px; text-align: center; color: #75797b; font-size: 18px; line-height: 1.4; }
+
+.history_slider_block article blockquote { padding: 13px 0; color: #75797b; text-align: center; font-size: 14px; border-top: 1px solid #ff9016; }
+
+.history_slider_block article blockquote b { display: block; font-style: normal; }
+
+.history_slider_block article blockquote b:before { content: ''; position: relative; left: -10px; top: -1px; display: inline-block; width: 0px; height: 0px; border-style: solid; border-width: 4.5px 5px 4.5px 0; border-color: transparent #1675a9 transparent transparent; }
+
+.history_slider_block article blockquote em { font-style: italic; font-family: "Merriweather"; }
+
+.history_slider { position: relative; overflow: hidden; }
+
+.history_slider .slick-arrow { position: absolute; top: 0; left: 0; z-index: 50; width: 100px; height: 100%; font: 0 / 0 a; text-shadow: none; color: transparent; background: -webkit-linear-gradient(left, white 20%, rgba(255, 255, 255, 0) 100%); background: linear-gradient(to right, white 20%, rgba(255, 255, 255, 0) 100%); }
+
+.history_slider .slick-arrow:before { content: ''; position: absolute; left: 0; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 15px 20px 15px 0; border-color: transparent #ff9016 transparent transparent; }
+
+.history_slider .slick-arrow.slick-next { left: auto; right: 0; background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 20%, white 100%); background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, white 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); }
+
+.history_slider .slick-arrow.slick-next:before { left: auto; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 15px 0 15px 20px; border-color: transparent transparent transparent #ff9016; }
+
+/*----------end-history-------------*/
 @media only screen and (max-width: 900px) { .wrapper { -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
   .container { width: auto; padding: 0 10px; }
   .bx-default-pager { left: 10px; margin-left: 0; }

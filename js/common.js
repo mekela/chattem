@@ -27,6 +27,30 @@ $(document).ready(function() {
 	  slidesToShow: 3,
 	});
 
+	$(".history_slider").slick({
+		centerMode: true,
+	  	centerPadding: '80px',
+	  	slidesToShow: 1,
+	    autoplay: false,
+	    dots: true,
+	    customPaging : function(slider, i) {
+	        var thumb = $(slider.$slides[i]).data('thumb');
+	        return '<a>'+thumb+'</a>';
+	    },
+
+	    responsive: [{ 
+	        breakpoint: 500,
+	        settings: {
+	            dots: false,
+	            arrows: false,
+	            infinite: false,
+	            slidesToShow: 2,
+	            slidesToScroll: 2
+	        } 
+	    }]
+	});
+
+
 	//close
 	$('.close_modal a').on('click', function(){
 	  //console.log($(this).parent);
