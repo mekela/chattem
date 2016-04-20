@@ -169,9 +169,13 @@ textarea { height: 90px; padding-top: 5px; }
 
 .header .menu .dropdown { width: 100%; background: #fff; height: auto; position: absolute; top: 84px; left: 0; z-index: 5; display: none; text-align: center; }
 
-.header .menu .dropdown li { height: 48px; }
+.header .menu .dropdown li { height: 48px; position: relative; }
 
-.header .menu .dropdown li a { height: 48px; line-height: 48px; color: #ff9600; font-size: 15px; font-weight: normal; }
+.header .menu .dropdown li:before { content: ''; position: absolute; display: block; opacity: 1; left: -9px; top: 17px; height: 15px; border-left: 1px solid #ffab33; border-right: 1px solid #ffdcaa; }
+
+.header .menu .dropdown li:first-child:before { display: none; }
+
+.header .menu .dropdown li a { height: 48px; line-height: 48px; color: #ff9600; font-size: 15px; font-weight: normal; position: relative; }
 
 .header .menu .dropdown .dropdown_bigmenu ol { display: inline-block; vertical-align: top; width: auto; text-align: left; padding: 10px 20px 20px 0; }
 
@@ -182,6 +186,8 @@ textarea { height: 90px; padding-top: 5px; }
 .header .menu .dropdown .dropdown_bigmenu ol li a { height: auto; line-height: 14px; text-transform: uppercase; color: #686868; font-size: 11px; }
 
 .header .menu .dropdown .dropdown_bigmenu ol li a:before { display: none; }
+
+.header .menu .dropdown .dropdown_bigmenu ol li:before { display: none; }
 
 .social_icon { float: right; padding: 18px 0; }
 
@@ -266,7 +272,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .tiles_item figure figcaption img { position: absolute; left: 6px; top: 17px; }
 
-.tiles_item section { background: #ff9600; position: absolute; top: -295px; opacity: 0; left: 0; width: 100%; height: 100%; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.tiles_item section { background: #ff9600; position: absolute; top: -211px; opacity: 1; left: 0; width: 100%; height: 100%; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 
 .tiles_item section p { font-size: 22px; color: #fff; font-family: "Merriweather"; line-height: 29px; font-style: italic; padding: 18px; }
 
@@ -329,7 +335,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 /*----------end-behind-scenes----------*/
 /*----------latest-inovations----------*/
-.latest_inovations_bnr { background: #fff; background: -webkit-linear-gradient(legacy-direction(#96e07e), #fff); background: -webkit-linear-gradient(#96e07e, #fff); background: linear-gradient(#96e07e, #fff); }
+.latest_inovations_bnr { background: #fff; background: -webkit-linear-gradient(top, #96e07e 0%, #ffffff 42%, #ffffff 98%); background: linear-gradient(to bottom, #96e07e 0%, #ffffff 42%, #ffffff 98%); }
 
 .latest_inovations_bnr .slider_txt h6, .latest_inovations_bnr .slider_txt h1 { color: #228e16; }
 
@@ -449,7 +455,7 @@ textarea { height: 90px; padding-top: 5px; }
 /*----------contacts----------*/
 .contacts_bnr { background: #fff; background: -webkit-linear-gradient(legacy-direction(#ffca90), #fff); background: -webkit-linear-gradient(#ffca90, #fff); background: linear-gradient(#ffca90, #fff); }
 
-.map { position: relative; overflow: hidden; position: absolute; top: -43px; z-index: 3; right: 0; border-radius: 50%; }
+.map, .image_round { position: relative; overflow: hidden; position: absolute; top: -43px; z-index: 3; right: 0; border-radius: 50%; }
 
 .contact_form_wrap { position: relative; overflow: hidden; width: 780px; }
 
@@ -457,7 +463,9 @@ textarea { height: 90px; padding-top: 5px; }
 
 .contact_form_row { position: relative; overflow: hidden; padding-bottom: 37px; }
 
-.contact_form_row .button { width: 231px; height: 56px; color: #fff; font-size: 18px; text-transform: uppercase; padding: 0; line-height: 56px; }
+.contact_form_row .button { width: 231px; height: 56px; color: #fff; font-size: 18px; text-transform: uppercase; padding: 0; line-height: 56px; background: #1371a2; }
+
+.contact_form_row .button:hover { opacity: 0.8; }
 
 .contact_form_row .text_center em { display: block; padding: 18px 0 0 0; font-size: 14px; color: #676767; font-family: "Merriweather"; }
 
@@ -483,6 +491,8 @@ textarea { height: 90px; padding-top: 5px; }
 
 /*----------end-contacts----------*/
 /*----------brands_landing----------*/
+.to_top_button { position: fixed; bottom: 5%; right: 10%; cursor: pointer; }
+
 .brands_landing_wrap { background: -webkit-linear-gradient(top, #d792d1 0%, rgba(255, 255, 255, 0.75) 12%, rgba(255, 255, 255, 0) 100%); background: linear-gradient(to bottom, #d792d1 0%, rgba(255, 255, 255, 0.75) 12%, rgba(255, 255, 255, 0) 100%); padding: 66px 0 0 0; }
 
 .brands_landing_wrap article { font-size: 16px; color: #54575a; line-height: 22px; text-align: center; padding-bottom: 28px; }
@@ -601,9 +611,11 @@ textarea { height: 90px; padding-top: 5px; }
 
 .history_slider .slick-dots li { display: inline-block; padding: 0 14px; }
 
-.history_slider .slick-dots li.slick-active { position: relative; }
+.history_slider .slick-dots li.slick-active { position: relative; font-weight: bolder; }
 
 .history_slider .slick-dots li.slick-active:before { content: url(../img/icons/history_active.png); position: absolute; left: 40%; bottom: -52px; }
+
+.history_slider .slick-dots li.slick-active a { font-weight: bold; }
 
 .history_slider .slick-dots li a { color: #ff9016; font-weight: normal; font-size: 30px; text-decoration: none; font-family: "Merriweather"; }
 
@@ -703,7 +715,7 @@ textarea { height: 90px; padding-top: 5px; }
   .contact_form_item textarea { height: 130px; }
   .contact_form_title, .contact_form_title em { font-size: 25px; }
   .contact_form_row .button { width: 465px; height: 112px; font-size: 50px; }
-  .map { margin: 0 auto; display: block; position: relative; overflow: hidden; top: 0; margin-top: -40px; right: 0; height: 478px; width: 478px; float: right; }
+  .map, .image_round { margin: 0 auto; display: block; position: relative; overflow: hidden; top: 0; margin-top: -40px; right: 0; height: 478px; width: 478px; float: right; }
   .contact_form_row .text_center em { font-size: 20px; }
   .brand_wrap .brand_block article { width: 100%; text-align: center; }
   .brand_wrap { height: auto; padding-bottom: 50px; background-size: cover; }

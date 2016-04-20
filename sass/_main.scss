@@ -79,12 +79,31 @@
  			text-align: center;
  			li{
  				height: 48px;
+ 				position: relative;
+ 				&:before{
+					content: '';
+					position: absolute;
+					display: block;
+					opacity: 1;
+					left: -9px;
+   					top: 17px;
+					height: 15px;
+					border-left: 1px solid #ffab33;
+					border-right: 1px solid #ffdcaa;
+				}
+				&:first-child{
+					&:before{
+						display: none;
+					}
+				}
  				a{
  					height: 48px;
  					line-height: 48px;
  					color: #ff9600;
  					font-size: 15px;
  					font-weight: normal;
+ 					position: relative;
+
  				}
  			}
  		}
@@ -117,6 +136,9 @@
 							&:before{
 								display: none;
 							}
+						}
+						&:before{
+							display: none;
 						}
 					}
 				}
@@ -341,8 +363,9 @@
 			section{
 				background:#ff9600;
 				position: absolute;
-				top: -295px;
-				opacity: 0;
+				//top: -295px;
+				top: -211px;
+				opacity: 1;
 				left: 0;
 				width: 100%;
 				height: 100%;
@@ -515,7 +538,10 @@
 
 /*----------latest-inovations----------*/
 .latest_inovations_bnr{
-	@include linear-gradient( #96e07e, #fff);
+	background: #fff;
+	background: -moz-linear-gradient(top,  #96e07e 0%, #ffffff 42%, #ffffff 98%);
+	background: -webkit-linear-gradient(top,  #96e07e 0%,#ffffff 42%,#ffffff 98%);
+	background: linear-gradient(to bottom,  #96e07e 0%,#ffffff 42%,#ffffff 98%);
 	.slider_txt{
 		h6, h1{
 			color: #228e16;
@@ -818,7 +844,7 @@
 .contacts_bnr{
 	@include linear-gradient( #ffca90, #fff);
 }
-	.map{
+	.map, .image_round{
 		@include povh('povh');
 		position: absolute;
 		top: -43px;
@@ -850,6 +876,10 @@
 				text-transform: uppercase;
 				padding: 0;
 				line-height: 56px;
+				background:#1371a2;
+				&:hover{
+					opacity: 0.8;
+				}
 			}
 			.text_center{
 				em{
@@ -922,6 +952,13 @@
 /*----------end-contacts----------*/
 
 /*----------brands_landing----------*/
+.to_top_button{
+position: fixed;
+bottom: 5%;
+right: 10%;
+cursor: pointer;
+}
+
 .brands_landing_wrap{
 	background: -moz-linear-gradient(top,  rgba(215,146,209,1) 0%, rgba(255,255,255,0.75) 12%, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top,  rgba(215,146,209,1) 0%,rgba(255,255,255,0.75) 12%,rgba(255,255,255,0) 100%);
@@ -1283,11 +1320,15 @@
 				padding: 0 14px;
 				&.slick-active{
 					position: relative;
+					font-weight: bolder;
 					&:before{
 						content: url(../img/icons/history_active.png);
 						position: absolute;
 						left: 40%;
 						bottom: -52px;
+					}
+					a{
+						font-weight: bold;
 					}
 				}
 				a{
