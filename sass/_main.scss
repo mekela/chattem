@@ -515,7 +515,10 @@
  	.hide_mobile{
  		display: block;
  	}
-
+	.sanofi{
+		float: right;
+		padding: 14px 0 0 0;
+	}
 /*----------end footer----------*/
 
 
@@ -1075,6 +1078,7 @@ cursor: pointer;
 	height: 629px;
 	@include povh('povh');
 	background:url(../img/brand_bg.jpg) no-repeat top center;
+	background-size: cover;
 	.brand_block{
 		background:rgba(255,255,255, 0.8);
 		margin: 64px 0 0 0;
@@ -1096,7 +1100,7 @@ cursor: pointer;
 			h1{
 				font-weight: bold;
 				font-size: 45px;
-				color: #fa1f17;
+				color: #0076a9;
 				text-transform: uppercase;
 
 			}
@@ -1104,10 +1108,10 @@ cursor: pointer;
 				a{
 					display: block;
 					padding: 10px 0;
-					border-top: 2px solid #fced64;
+					border-top: 2px solid #e1e1e1;
 					text-decoration: none;
 					font-size: 16px;
-					color: #fa1f17;
+					color: #0076a9;
 					text-transform: uppercase;
 					font-weight: bold;
 					position: relative;
@@ -1118,9 +1122,27 @@ cursor: pointer;
 							position: absolute;
 							left: 0;
 							top: 17px;
-							@include arr(8,8, #fa1f17, l);
+							@include arr(8,8, #0076a9, l);
 						}
 					}
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			ul{
+				padding: 25px 0 0 0;
+				color: #6a6a6a;
+				line-height: 22px;
+				font-size: 15px;
+				strong{
+					display: block;
+					text-transform: uppercase;
+					font-size: 16px;
+					padding-bottom: 10px;
+				}
+				a{
+					text-decoration: none;
 					&:hover{
 						text-decoration: underline;
 					}

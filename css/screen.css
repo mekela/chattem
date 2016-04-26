@@ -325,6 +325,8 @@ textarea { height: 90px; padding-top: 5px; }
 
 .hide_mobile { display: block; }
 
+.sanofi { float: right; padding: 14px 0 0 0; }
+
 /*----------end footer----------*/
 /*----------behind-scenes----------*/
 .top_wrap .container { min-height: 460px; }
@@ -529,7 +531,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 /*----------end-brands_landing----------*/
 /*------------brand-----------------*/
-.brand_wrap { height: 629px; position: relative; overflow: hidden; background: url(../img/brand_bg.jpg) no-repeat top center; }
+.brand_wrap { height: 629px; position: relative; overflow: hidden; background: url(../img/brand_bg.jpg) no-repeat top center; background-size: cover; }
 
 .brand_wrap .brand_block { background: rgba(255, 255, 255, 0.8); margin: 64px 0 0 0; padding: 0 0 20px 0; }
 
@@ -539,15 +541,23 @@ textarea { height: 90px; padding-top: 5px; }
 
 .brand_wrap .brand_block article p { padding: 20px 0; }
 
-.brand_wrap .brand_block article h1 { font-weight: bold; font-size: 45px; color: #fa1f17; text-transform: uppercase; }
+.brand_wrap .brand_block article h1 { font-weight: bold; font-size: 45px; color: #0076a9; text-transform: uppercase; }
 
-.brand_wrap .brand_block article nav a { display: block; padding: 10px 0; border-top: 2px solid #fced64; text-decoration: none; font-size: 16px; color: #fa1f17; text-transform: uppercase; font-weight: bold; position: relative; }
+.brand_wrap .brand_block article nav a { display: block; padding: 10px 0; border-top: 2px solid #e1e1e1; text-decoration: none; font-size: 16px; color: #0076a9; text-transform: uppercase; font-weight: bold; position: relative; }
 
 .brand_wrap .brand_block article nav a.back { padding-left: 12px; }
 
-.brand_wrap .brand_block article nav a.back:before { content: ''; position: absolute; left: 0; top: 17px; width: 0px; height: 0px; border-style: solid; border-width: 4px 8px 4px 0; border-color: transparent #fa1f17 transparent transparent; }
+.brand_wrap .brand_block article nav a.back:before { content: ''; position: absolute; left: 0; top: 17px; width: 0px; height: 0px; border-style: solid; border-width: 4px 8px 4px 0; border-color: transparent #0076a9 transparent transparent; }
 
 .brand_wrap .brand_block article nav a:hover { text-decoration: underline; }
+
+.brand_wrap .brand_block article ul { padding: 25px 0 0 0; color: #6a6a6a; line-height: 22px; font-size: 15px; }
+
+.brand_wrap .brand_block article ul strong { display: block; text-transform: uppercase; font-size: 16px; padding-bottom: 10px; }
+
+.brand_wrap .brand_block article ul a { text-decoration: none; }
+
+.brand_wrap .brand_block article ul a:hover { text-decoration: underline; }
 
 .brand_modal .brand_modal_inner { padding: 25px; }
 
