@@ -521,6 +521,10 @@ textarea { height: 90px; padding-top: 5px; }
 
 .brands_landing_item p strong { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; color: #54575a; padding-bottom: 5px; }
 
+.brand_land_img { display: block; min-height: 165px; position: relative; overflow: hidden; width: 255px; }
+
+.brand_land_img span { display: table-cell; vertical-align: middle; text-align: center; height: 165px; position: relative; overflow: hidden; width: 255px; }
+
 .brands_landing_slider .slick-arrow { position: absolute; top: 0; left: 0; z-index: 50; width: 100px; height: 100%; font: 0 / 0 a; text-shadow: none; color: transparent; background: -webkit-linear-gradient(left, white 20%, rgba(255, 255, 255, 0) 100%); background: linear-gradient(to right, white 20%, rgba(255, 255, 255, 0) 100%); }
 
 .brands_landing_slider .slick-arrow:before { content: ''; position: absolute; left: 0; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 15px 20px 15px 0; border-color: transparent #ff9016 transparent transparent; }

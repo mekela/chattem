@@ -1035,6 +1035,22 @@ cursor: pointer;
 					
 				}
 			}
+	.brand_land_img{
+		display: block;
+		min-height: 165px;
+		position: relative;
+		overflow: hidden;
+		width: 255px;
+		span{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			height: 165px;
+			position: relative;
+			overflow: hidden;
+			width: 255px;
+		}
+	}
 .brands_landing_slider{
 	.slick-arrow{
 		position: absolute;
