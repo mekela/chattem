@@ -1,3 +1,4 @@
+/*font*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900|Merriweather+Sans);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
@@ -159,15 +160,15 @@ textarea { height: 90px; padding-top: 5px; }
 
 .header .menu li a { display: inline-block; height: 84px; line-height: 84px; position: relative; }
 
-.header .menu li a:before { width: 0px; height: 0px; border-style: solid; border-width: 0 9px 13px 9px; border-color: transparent transparent #fff transparent; position: absolute; bottom: 0; left: 50%; margin-left: -9px; content: ''; opacity: 0; }
+.header .menu li a:before { width: 0px; height: 0px; border-style: solid; border-width: 0 9px 13px 9px; border-color: transparent transparent #fff transparent; position: absolute; bottom: 10px; left: 50%; -webkit-transition: all 0.6s ease; transition: all 0.6s ease; margin-left: -9px; content: ''; opacity: 0; }
 
-.header .menu li:hover .dropdown { display: block; }
+.header .menu li:hover .dropdown { display: block; opacity: 1; z-index: 5; top: 84px; }
 
 .header .menu li:hover a { position: relative; }
 
-.header .menu li:hover a:before { opacity: 1; }
+.header .menu li:hover a:before { opacity: 1; bottom: 0; }
 
-.header .menu .dropdown { width: 100%; background: #fff; height: auto; position: absolute; top: 84px; left: 0; z-index: 5; display: none; text-align: center; }
+.header .menu .dropdown { width: 100%; -webkit-transition: all 0.6s ease; transition: all 0.6s ease; background: #fff; height: auto; position: absolute; top: 74px; left: 0; opacity: 0; text-align: center; }
 
 .header .menu .dropdown li { height: 48px; position: relative; }
 
@@ -189,7 +190,9 @@ textarea { height: 90px; padding-top: 5px; }
 
 .header .menu .dropdown .dropdown_bigmenu ol li:before { display: none; }
 
-.social_icon { float: right; padding: 18px 0; }
+.social_icon { display: inline-block; padding: 0 0 0 11px; }
+
+.social_icon img { width: 32px; height: 31px; position: relative; top: 6px; }
 
 /*----------end-header----------*/
 /*----------main----------*/
@@ -321,11 +324,17 @@ textarea { height: 90px; padding-top: 5px; }
 
 .footer .logo { padding: 0; }
 
+.footer .menu li { vertical-align: middle; }
+
+.footer .menu li.cloud { position: relative; top: 8px; }
+
+.footer .menu li.cloud:before { content: ''; height: 25px; width: 2px; position: absolute; background: #fff; left: -10px; top: 0px; }
+
 .hide_desctop { display: none; }
 
 .hide_mobile { display: block; }
 
-.sanofi { float: right; padding: 14px 0 0 0; }
+.sanofi { background: #fff; padding: 3px 0; text-align: right; }
 
 /*----------end footer----------*/
 /*----------behind-scenes----------*/
@@ -563,7 +572,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .brand_wrap .brand_block article ul a:hover { text-decoration: underline; }
 
-.brand_modal .brand_modal_inner { padding: 25px; }
+.brand_modal .brand_modal_inner { padding: 25px; background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.93) 11%, rgba(255, 255, 255, 0.96) 49%, rgba(255, 255, 255, 0.98) 74%, #ffef85 100%); background: linear-gradient(45deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.93) 11%, rgba(255, 255, 255, 0.96) 49%, rgba(255, 255, 255, 0.98) 74%, #ffef85 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#ffef85',GradientType=1 ); }
 
 .brand_modal .brand_modal_inner h6, .brand_modal .brand_modal_inner h1 { font-size: 20px; color: #fa1f17; font-weight: bold; padding-bottom: 11px; border-bottom: 2px solid #fced64; text-transform: uppercase; margin-bottom: 25px; }
 
@@ -634,6 +643,42 @@ textarea { height: 90px; padding-top: 5px; }
 .history_slider .slick-dots li a { color: #ff9016; font-weight: normal; font-size: 30px; text-decoration: none; font-family: "Merriweather"; }
 
 /*----------end-history-------------*/
+/*----------search-------------*/
+.search_page dl { padding-left: 0; }
+
+.search_page dl:before { display: none; }
+
+.search_page dl dt { padding-bottom: 0; }
+
+.search_page h1 { float: left; }
+
+.search_content, .search_head { float: right; vertical-align: top; padding: 10px 0 0 0; }
+
+.search_content button, .search_head button { width: 29px; height: 26px; background: #ff9016; padding: 0; text-align: center; border: none; vertical-align: top; }
+
+.search_content button:hover, .search_head button:hover { opacity: 0.8; }
+
+.search_content button img, .search_head button img { width: 20px; height: 20px; }
+
+.search_content input, .search_head input { width: 214px; height: 26px; vertical-align: top; margin: 0 9px 0 0; background-color: #fff; box-shadow: inset 1px 1px rgba(57, 57, 55, 0.44); }
+
+.search_head { float: none; display: inline-block; }
+
+.search_head button { width: 29px; height: 26px; background: #ff9016; padding: 0; text-align: center; border: none; vertical-align: top; }
+
+.search_head button:hover { opacity: 0.8; }
+
+.search_head button img { width: auto; height: auto; }
+
+.head_right { float: right; overflow: hidden; position: relative; z-index: 90; height: 90px; text-align: right; padding: 0 10px 0 0; }
+
+.head_right .head_txt { padding: 6px 0 0 0; font-size: 12px; color: #ffffff; }
+
+/*----------end-search-------------*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) { input { -webkit-transition-property: none !important; transition-property: none !important; } }
+
+@media (min-width: 768px) { .menu > ul > li.touch-toggle.open .submenu { display: block !important; } }
+
 @media only screen and (max-width: 900px) { .wrapper { -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
   .container { width: auto; padding: 0 10px; }
   .bx-default-pager { left: 10px; margin-left: 0; }
